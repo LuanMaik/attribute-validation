@@ -37,14 +37,14 @@ class ExampleClass
 }
 
 // Create class instance
-$exampleInstance = new ExampleClass('Has Valid Name', new \DateTime('1990-01-01'), 25);
+$exampleInstance = new ExampleClass('', new \DateTime('1990-01-01'), 25);
 
 try {
     // Run validation
     (new Validator())->validateClassProperties($exampleInstance);
 } catch (\InvalidArgumentException $ex) {
     // Validation error message
-    echo $ex->getMessage();
+    echo $ex->getMessage(); // exception message 'name is required'
 }
 ```
 
