@@ -1,0 +1,30 @@
+{
+    "name": "luanmaik/attribute-validation",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Luan Maik"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "respect/validation": "^2.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "ValidationAttribute\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9"
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit"
+    }
+}
